@@ -10,5 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "async": "^2.5.0",
+    "merge": "^1.2.0",
+    "node-forge": "^0.7.1",
+    "request": "^2.83.0"
   }
 }

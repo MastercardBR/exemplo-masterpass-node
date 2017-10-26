@@ -7,7 +7,8 @@ var forge = require('node-forge');
 var pki = forge.pki;
 var rsa = pki.rsa;
 
-const request = require('request'), querystring = require('querystring');
+const request = require('request');
+const querystring = require('querystring');
 
 
 function Masterpass(opts) 
@@ -16,10 +17,9 @@ function Masterpass(opts)
     this.conf = merge({
         version: '1.0',
         signature: 'RSA-SHA256',
-        realm: 'eWallet',
+        realm: 'WalletNode',
         env: 'stage',
         urlPrefix: 'https://sandbox.api.mastercard.com',
-        keySize: 2048
     }, opts, {
             urls: {
                 production: 'https://api.mastercard.com',
